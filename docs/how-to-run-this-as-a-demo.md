@@ -10,7 +10,7 @@
 
 1. Clone down this repo
 2. Log into the HoH cluster
-3. Run `oc apply -f hub-of-hubs/bootstrap/` to install ArgoCD/Vault/External Secrets operator.
+3. Run ` cd ~/multiverse-of-multicluster-madness/ && oc apply -k hub-of-hubs/bootstrap/` to install ArgoCD/Vault/External Secrets operator.
 4. Initialize Vault with some secrets - it's running in Dev mode so everything is in-memory and will be lost on restart.  The root token is just set to 'root' in this mode too.
 
 ```bash
